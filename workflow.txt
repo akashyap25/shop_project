@@ -1,0 +1,50 @@
+                                                                                       Workflow for Backend
+
+1. Shop Registration Workflow:
+   a. Shopkeeper navigates to the registration page and provides required details.
+   b. The frontend sends a registration request to the backend.
+   c. Backend validates the data, creates a new shop account, and generates authentication credentials.
+   d. Backend sends a response to the frontend indicating successful registration.
+
+2. Shop Product Management Workflow:
+   a. Shopkeeper logs in to the platform using their credentials.
+   b. Shopkeeper accesses the product management interface.
+   c. Shopkeeper adds, updates, or deletes products, providing relevant details such as name, description, price, and availability.
+   d. The frontend sends product data to the backend via API calls.
+   e. Backend validates the data and updates the product information in the database.
+   f. Backend sends a response to the frontend indicating the success of the operation.
+
+3. Discounts and Offers Workflow:
+   a. Shopkeeper selects the discount/offer management section.
+   b. Shopkeeper creates a new discount or offer, specifying the product(s) and discount details.
+   c. The frontend sends the discount data to the backend.
+   d. Backend validates the data, applies the discount to the specified products, and updates the database.
+   e. Backend sends a response to the frontend indicating the success of the operation.
+
+4. User Ratings and Reviews Workflow:
+   a. Customer logs in to the platform or signs up if new.
+   b. Customer navigates to a shop or product page and provides a rating and review.
+   c. The frontend sends the rating and review data to the backend.
+   d. Backend validates the data, stores the rating and review in the database, and updates the average rating for the shop/product.
+   e. Backend sends a response to the frontend indicating the success of the operation.
+
+5. Customer Ordering Workflow:
+   a. Customer searches for products using filters and keywords.
+   b. Customer selects desired products and adds them to the cart.
+   c. Customer proceeds to checkout and provides shipping and payment details.
+   d. The frontend sends the order details to the backend.
+   e. Backend validates the data, creates a new order record, and updates the inventory.
+   f. Backend sends a response to the frontend indicating the success of the order placement.
+
+6. Communication Workflow:
+   a. Customer accesses the messaging interface and initiates a conversation with the shopkeeper.
+   b. The frontend sends the message content and recipient details to the backend.
+   c. Backend stores the message in the database and updates the conversation history.
+   d. Backend sends a response to the frontend indicating the success of the message delivery.
+
+7. Slot Booking Workflow:
+   a. Customer selects a shop offering appointment-based services.
+   b. Customer checks the available slots and selects a preferred time.
+   c. The frontend sends the slot selection to the backend.
+   d. Backend validates the availability, books the slot for the customer, and updates the database.
+   e. Backend sends a response to the frontend indicating the success of the slot booking.
