@@ -6,6 +6,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const app = express();
 const { serverConfig } = require('./config')
+const routerapi = require('./routes')
 
 // mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 //     .then(() => console.log('Connected Successfully'))
@@ -17,12 +18,7 @@ app.use(bodyParser.json()); // bodyparser --parses the request to json format
 app.use(helmet());
 app.use(morgan("common"));
 
-
-
-app.get("/", (req, res) => {
-    res.send("Welcome to My Project");
-})
-
+app.use('/', routerapi)
 
 app.listen(serverConfig.PORT, () => {
     console.log(`Server running on port ${serverConfig.PORT}`);
