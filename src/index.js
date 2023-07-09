@@ -8,9 +8,9 @@ const app = express();
 const { serverConfig } = require('./config')
 const routerapi = require('./routes')
 
-// mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-//     .then(() => console.log('Connected Successfully'))
-//     .catch((err) => { console.error(err); });
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('Connected Successfully'))
+    .catch((err) => { console.error(err); });
 
 //middleware
 app.use(bodyParser.urlencoded({ extended: false }));

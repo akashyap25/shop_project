@@ -2,7 +2,7 @@
   "name": "shops",
   "version": "1.0.0",
   "description": "Project on local shops and more properties",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "chk": "npx nodemon src/index.js"
   },
